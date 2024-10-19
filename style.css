@@ -1,0 +1,1295 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');@import url('https://fonts.cdnfonts.com/css/fenix');
+@import url(https://fonts.bunny.net/css?family=pushster:400);
+@import url('https://fonts.cdnfonts.com/css/din-alternate');
+
+/*
+font-family: 'Fenix', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+:root {
+  --main-bg-color: #c7a17a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Fenix', sans-serif;
+    font-family: 'Poppins', sans-serif 
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ecd8bc;
+}
+
+
+
+/***************************** Header *************************/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000000;
+    z-index: 111;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: centrer;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #fff;
+    margin: 0px 30px;
+    position: relative;
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+header nav a::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    background: #7ca5a8;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .4 ease-in-out;
+}
+
+header nav a:hover:before{
+    transform: scale(1);
+
+}
+
+header nav a:hover{
+    color: #7ca5a8;
+    text-decoration: none;
+}
+
+
+
+.bars{
+    display: none;
+}
+
+.bars img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo1 h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+.logo2 {
+    position: absolute;
+    opacity: 100%;
+    color: #fff;
+    margin-top: 70px;
+    font-size: 4rem;
+    margin-left: 50px;
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+
+
+/**************************** Header Mobile *************************/
+
+@media(max-width: 1365px){
+    header nav {
+        margin-left: 50px;
+    }
+    
+    header nav a {
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media(max-width: 1191px){
+    header nav {
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 991px){
+    
+    header nav {
+        align-items: center;
+    }
+    
+    header nav a {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+    
+    
+}
+
+@media(max-width: 960px){
+    header nav {
+        align-self: start;
+    }
+}
+
+@media(max-width: 390px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
+
+@media(max-width: 789px){
+    .info{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    header .navigation{
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .4s ease-in-out;
+        flex-direction: column;
+        height: 110vh;
+        margin-left: 40%;
+    }
+
+    header nav a {
+        font-size: 50px;
+    }
+    
+    header .navigation li{
+        margin: 10px 0px;
+    }
+    
+    .home-content h1{
+        font-size: 3rem;
+    }
+    
+    .navigation.scrolled {
+    display: none;
+  }
+    
+}
+
+@media(max-width: 576px){
+    .home-content h1{
+        font-size: 2rem;
+    }
+    .home-content p{
+        font-size: 13px;
+    }
+    .home-content br{
+        display: none;
+    }
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+@media(max-width: 350px){
+    .home-content .home-links{
+        flex-direction: column;
+        grid-row-gap: 15px;
+    }
+}
+
+
+
+
+/********************** Home Section ***********************/
+
+.home-section{
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.116) 0%) , linear-gradient(180deg, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 0%), url(P1570476.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(113vh - 113px);
+    display: flex;
+    position: relative;
+}
+
+.break{
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.break hr{
+    margin: 15px 20px;
+    width: 100%;
+    height: 5px;
+    background: #ffffff;
+    margin-top: 20px;
+    color: #00000000;
+    opacity: 100%;
+}
+
+.home-content{
+    position: absolute;
+    left: -200%;
+    color: #fff;
+    transition: left .5s ease-in-out;
+}
+
+.home-content h1{
+    font-size: 3.5rem;
+}
+
+.home-content p{
+    font-size: 14px;
+    color: #f9f9f9;
+}
+
+.home-content .home-links{
+    display: flex;
+    margin-top: 30px;
+}
+
+.home-links a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #c7a17a;
+    border-radius: 5px;
+    padding: 11px 20px;
+    display: inline-block;
+    border: 1px solid #c7a17a;
+    transition: .4s ease-in-out;
+}
+
+.home-links .first{
+    margin-right: 20px;
+}
+
+.home-links .second a{
+    background: transparent;
+    border-color: #333;
+}
+
+.home-links a:hover{
+    background: transparent;
+    color: #c7a17a;
+}
+
+.home-links .second a:hover{
+    background: #c7a17a;
+    color: #fff;
+}
+
+.slide-in-left {
+  transition: left 0.5s ease;
+}
+
+/************************************* Home Mobile ********************************/
+
+@media(max-width: 991px){
+    .home-section{
+        width: 100%;
+    }
+    
+    .break{
+        width: 96%;
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-width: 576px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
+
+@media(max-width: 390px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
+/************************************* Section Two ********************************/
+.s2{
+    margin-bottom: 100px;
+    width: 100%;
+    background-color: #82b6b9;
+    height: calc(113vh - 113px);
+}
+
+.s2 .s2-flex{
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.s2-flex .s2_images{
+    width: 33%;
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.s2-flex .s2_text{
+    width: 49%;
+    position: relative;
+    text-align: center;
+    margin: 100px 0 100px 80px;
+    padding: 150px 50px;
+
+
+                                    /* Box */
+
+    --b: 2px;   /* thickness of the border */
+    --c: rgba(7, 7, 7, 0.466);   /* color of the border */
+    --w: 200px;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+
+}
+
+.s2-flex .s2_images img{
+    width: 95%;
+    margin: 40px 0 40px 0;
+    box-shadow: 30px 30px 0px 0px #7ca5a8;
+}
+
+.s2 h3 {
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 2px solid #c7a17a;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.s2 p{
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: auto;
+}
+
+
+
+
+
+/***************************** Section Two Mobile ***********************************/
+@media(max-width: 1145px){
+    .s2 p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 991px){
+    .s2 {
+        height: 100%;
+       }
+
+       .s2 .s2-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .s2-flex .s2_images{
+        width: 97%;
+    }
+    
+    .s2-flex .s2_images img{
+        width:  92%;
+    }
+    
+    .s2 .s2_text{
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .s2 p {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 576px){
+    .s2 .s2-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .s2-flex .s2_images{
+        width: 95%;
+    }
+    
+    .s2-flex .s2_images img{
+        width:  90%;
+    }
+    
+    .s2 .s2_text{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+/************************ Section Three ***********************/
+
+.bg-service{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    grid-column-gap: 10px;
+    flex-wrap: wrap;
+    scroll-margin-top: 110px;
+    height: calc(100vh - 100px);
+    background: #ecd8bc;
+}
+
+
+.bg-service .service-one{
+    width: 19%;
+    position: relative;
+    overflow: hidden;
+}
+
+#row-two {
+    padding-top: 30px;
+}
+
+.service-one img{
+    width: 100%;
+    transition: .1s ease-in-out;
+}
+
+/*
+.service-one .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+}
+    */
+
+.service-one .over-txt{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+/**
+.service-one .over-txt p{
+    margin: 0;
+    color: #c7a17a;
+    text-transform: capitalize;
+}
+
+.service-one .over-txt h4{
+    text-transform: capitalize;
+}
+**/
+
+.service-one:hover img{
+    transform: scale(1.1);
+}
+/************************ Section Three Mobile ***********************/
+
+@media(max-width: 991px){
+    .bg-service {
+        justify-content: space-between;
+        align-items: center;
+        grid-row-gap: 10px;
+        grid-column-gap: 0px;
+        height: 100%;
+    }
+
+    #row-two {
+        padding-top: 0px;
+    }
+
+    .bg-service .service-one{
+        width: 33%;
+    }
+}
+
+@media(max-width: 576px){
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+@media(max-width: 390px){
+    .bg-service .service-one{
+        width: 100%;
+    }
+}
+
+/****************************** Menü Section Four **********************/
+
+.bg-menu{
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.247) 0%) , linear-gradient(180deg, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 0%), url(P1570357.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(116vh - 116px);
+    padding: 50px 0px;
+}
+
+.bg-menu .overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.menu-title{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-title section{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #c7a17a;
+}
+
+.menu-title h2{
+    font-size: 2.8rem;
+    margin-top: 4px;
+    font-family: 'Pushster', display;
+    text-transform: uppercase;
+}
+
+.menu-title hr{
+    margin: 15px auto;
+    width: 150px;
+    background: #c7a17a;
+}
+
+.menu-flex{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.menu-flex .menu1{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecd8bc;
+    margin-bottom: 20px;
+}
+
+.menu1 img{
+    width: 120px;
+    margin-right: 10px;
+}
+
+.menu1 h4{
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    margin-left: 80px;
+}
+
+.menu1 .line{
+    margin-top: 10px;
+    border-top: 1px dotted #7ca5a8;
+    width: 52%;
+}
+
+.menu-link{
+    text-align: center;
+    margin: 180px 0;
+    scroll-margin-top: 250px;
+}
+
+.menu-link a{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    background: #c7a07a00;
+    padding: 10px 18px;
+    transition: .4s ease-in-out;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+.menu-link a:hover{
+    background: #ecd8bc;
+}
+
+/********************************* Menu Mobile ************************/
+
+
+@media(max-width: 1485px) {
+    .menu1 h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 1310px) {
+    .menu1 h4 {
+        font-size: 1.1rem;
+    }
+
+    .menu-flex .menu1 {
+        width: 50%;
+    }
+}
+
+@media(max-width: 991px){
+    .menu-flex {
+        padding: 50px;
+    }
+
+    .menu-link {
+        margin: 0;
+        padding-bottom: 50px;
+    }
+    
+    .menu-flex .menu1{
+        width: 100%;
+    }
+    .bg-menu{
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu1 h4 {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 547px){
+    .menu1 img{
+        width: 90px;
+    }
+    .menu1 h4{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 390px){
+    .menu1 h4{
+        font-size: 18px;
+    }
+}
+
+
+/******************************* Galéria Section Five *******************************/
+
+
+.bg-gallery {
+    margin: 150px 0;
+    height: calc(85vh - 85px);
+    scroll-margin-top: 120px;
+}
+
+.bg-gallery .gallery-flex{
+    display: flex;
+}
+
+.gallery-flex .image-one{
+    width: 33%;
+    padding-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.gallery-flex .image-one img {
+    border: 3px solid #000000;
+}
+
+.gallery-flex img{
+    width: 100%;
+    cursor: pointer;
+    height: 160%;
+
+}
+
+.inside-gallery{
+    display: flex;
+    width: 33%;
+    padding-top: 80px;
+}
+
+
+.inside-gallery img{
+    border: 3px solid #000000;
+}
+
+.inside-gallery .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inside-gallery .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.last-image{
+    width: 33%;
+    padding-bottom: 80px;
+    margin-right: 100px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.last-image img {
+    border: 3px solid #000000;
+}
+
+.bg-gallery .event{
+    position: relative;
+}
+
+
+.bg-gallery .overlay-two{
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.bg-gallery .event:hover .overlay-two{
+    opacity: 1;
+}
+
+
+
+/******************* Section Five Mobile **************************/
+
+@media(max-width: 1300px){
+
+    .bg-gallery {
+        margin: 70px 0;
+        height: 100%;
+        scroll-margin-top: 60px;
+    }
+
+    .bg-gallery .gallery-flex{
+        display: block;
+    }
+
+    .gallery-flex img{
+        width: 100%;
+        cursor: pointer;
+        height: 100%;
+    
+    }
+
+    .bg-gallery .overlay-two{
+        position: absolute;
+        background: rgba(0,0,0,.4);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .4s ease-in-out;
+    }
+
+    .gallery-flex .image-one{
+        width: 80%;
+        padding-bottom: 20px;
+        margin: auto;
+        display: flex;
+    }
+
+    .inside-gallery{
+        display: flex;
+        width: 80%;
+        padding-top: 0;
+        margin: auto;
+    }
+
+    .last-image{
+        width: 80%;
+        padding-bottom: 80px;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .bg-gallery .gallery-flex{
+       flex-wrap: wrap;
+    }
+    
+    .gallery-flex .image-one{
+        width: 80%;
+    }
+    .inside-gallery{
+        width: 80%;
+    }
+    .bg-gallery .last-image{
+        
+    }
+}
+
+@media(max-width: 576px){
+    .gallery-flex .image-one{
+        width: 100%;
+    }
+    .inside-gallery{
+        width: 100%
+    }
+}
+
+
+/******************************** Rólunk Section Six **************************/
+
+.s3{
+    width: 100%;
+    background-color: #96c4c7;
+    height: calc(113vh - 113px);
+}
+
+.s3 .s3-flex{
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.s3-flex .s3_images{
+    width: 50%;
+    position: relative;
+    margin: 0 50px 0 50px;
+    height: 100%;
+}
+
+.s3-flex .s3_text{
+    width: 49%;
+    position: relative;
+    text-align: center;
+    margin: 100px 0 100px 80px;
+    padding: 50px;
+
+
+                                    /* Box */
+
+    --b: 2px;   /* thickness of the border */
+    --c: rgba(7, 7, 7, 0.466);   /* color of the border */
+    --w: 200px;  /* width of border */
+    
+  
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg,var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+
+}
+
+.s3-flex .s3_images img{
+    width: 100%;
+    margin: 100px 0 100px 0;
+    box-shadow: 30px 30px 0px 0px #7ca5a8;
+}
+
+.s3 h3{
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 2px solid #c7a17a;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.s3 p{
+    font-size: 20px;
+    color: #030303;
+    text-align: center;
+}
+
+
+/***************************** Rolunk Mobile ***************************/
+
+@media(max-width: 1145px){
+    .s3 p{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 991px){
+    .s3{
+        height: 100%;
+       }
+
+     .s3 .s3-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .s3-flex .s3_images{
+        width: 90%;
+    }
+    
+    .s3-flex .s3_images img{
+        width:  92%;
+    }
+    
+    .s3 .s3_text{
+        width: 100%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .s3 p{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 576px){
+    .s3 .s3-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .s3-flex .s3_images{
+        width: 85%;
+    }
+    
+    .s3-flex .s3_images img{
+        width:  90%;
+    }
+    
+    .s3 .s3_text{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+/***************************** Section Six Mobile **********************/
+
+@media(max-width: 768px){
+    .bg-about .about-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .about-flex .about1{
+        width: 97%;
+    }
+    
+    .about-flex .about1 img{
+        width:  92%;
+    }
+    
+    .bg-about .about2{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 576px){
+    .bg-about .about-flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+     .about-flex .about1{
+        width: 95%;
+    }
+    
+    .about-flex .about1 img{
+        width:  90%;
+    }
+    
+    .bg-about .about2{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+/******************************** Footer ***********************************/
+
+.footer{
+    background: #ecd8bc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    padding: 100px 0px;
+}
+
+.footer .footer-flex{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-flex .footer1, .footer-flex .footer2{
+    width: 20%;
+    color: rgb(90, 53, 28);;
+    text-align: center;
+}
+
+.footer1 img{
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.footer1 section{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer1 .footer-links a{
+    text-decoration: none;
+    color: rgb(90, 53, 28);;
+    margin: 0 8px;
+    font-size: 18px;
+    display: inline-grid;
+    transition: .4 ease-in-out;
+    cursor: default;
+    width: 80px;
+    text-align: center;
+}
+
+.footer2 .footer-links a{
+    text-decoration: none;
+    color: rgb(90, 53, 28);;
+    font-size: 18px;
+    display: inline-grid;
+    transition: .4 ease-in-out;
+    width: 80px;
+    cursor: default;
+    text-align: center;
+}
+
+.footer2 .footer-links a:hover{
+    color: #7ca5a8;
+}
+
+.footer1 .map:hover{
+    color: #7ca5a8;
+}
+
+.footer1 h3{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.footer2 h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.footer1 .location{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.location span{
+    margin-left: -30px;
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.location a{
+    text-decoration: none;
+    color: rgb(90, 53, 28);;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.location section{
+    margin-bottom: 5px;
+}
+
+.footer1 .Days{
+    margin-bottom: 5px;
+}
+
+
+
+.footer2 .footer-links p{
+    font-size: 12px;
+    display: block;
+    position: relative;
+    width: 100%;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+.footer2 #margin-footer-links p {
+    margin-bottom: 1rem !important;
+}
+
+.footer hr{
+    margin: 15px auto;
+    width: 90%;
+    height: 5px;
+    background: rgb(90, 53, 28);
+}
+
+.footer .rights{
+    text-align: center;
+}
+
+.footer .rights p{
+    color: rgb(90, 53, 28);
+    font-size: 13px;
+}
+
+
+/**************************************** Footer Mobile ***************************/
+
+@media(max-width: 1200px){
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
+
+@media(max-width: 991px){
+    .footer-flex .footer1{
+        width: 49%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 18%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 18%;
+    }
+    
+    .footer-flex .footer2{
+        width: 100%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}
+
+@media(max-width: 576px){
+    .footer-flex .footer1{
+        width: 100%;
+    }
+    
+    .footer-flex .footer2{
+        width: 100%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
+    }
+    
+    .footer{
+        height: auto;
+    }
+}

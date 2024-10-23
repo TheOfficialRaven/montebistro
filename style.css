@@ -905,20 +905,8 @@ header nav a:hover{
 
 }
 
-@media(max-width: 768px){
-    .bg-gallery .gallery-flex{
-       flex-wrap: wrap;
-    }
-    
-    .gallery-flex .image-one{
-        width: 80%;
-    }
-    .inside-gallery{
-        width: 80%;
-    }
-}
 
-@media(max-width: 576px){
+@media(max-width: 768px){
     .bg-gallery {
         margin: auto;
         height: 100%;
@@ -1063,7 +1051,13 @@ header nav a:hover{
 
 
 /***************************** Rolunk Mobile ***************************/
-
+@media(max-width: 1600px){
+    .s3-flex .s3_images {
+        margin-left: 100px;
+        padding-right: 40px;
+    }
+}
+    
 @media(max-width: 1350px){
     .s3 {
         padding: 10px 0;
@@ -1071,6 +1065,12 @@ header nav a:hover{
 
     .s3 p{
         font-size: 17px;
+    }
+}
+
+@media(max-width: 1260px){
+    .s3 p{
+        font-size: 15px;
     }
 }
 

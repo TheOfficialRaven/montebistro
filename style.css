@@ -624,7 +624,7 @@ header nav a:hover{
     top: 0;
     left: 0;
     background: rgba(0,0,0,.4);
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin: auto;
 }
@@ -660,7 +660,7 @@ header nav a:hover{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding: 80px 60px 0 0;
 }
 
 .menu-flex .menu1{
@@ -692,7 +692,7 @@ header nav a:hover{
 
 .menu-link{
     text-align: center;
-    margin: 180px 0;
+    margin: 100px 0 0 0;
     scroll-margin-top: 250px;
 }
 
@@ -724,7 +724,7 @@ header nav a:hover{
     }
 }
 
-@media(max-width: 1310px) {
+@media(max-width: 1320px) {
     .menu-link {
         margin: 80px 0 0 0;
     }
@@ -804,7 +804,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 80px;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
     /* margin-bottom: 150px; */
     height: 100%;
     scroll-margin-top: 0;
@@ -812,13 +812,13 @@ header nav a:hover{
 
 .bg-gallery .gallery-flex{
     display: flex;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .gallery-flex .image-one{
-    width: 33%;
+    width: 30%;
     padding-bottom: 150px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
     display: flex;
 }
@@ -830,14 +830,15 @@ header nav a:hover{
 .gallery-flex img{
     width: 100%;
     cursor: pointer;
-    height: 140%;
+    height: 100%;
+    transform:scale(1);
 
 }
 
 .inside-gallery{
     display: flex;
-    width: 33%;
-    padding-top: 200px;
+    width: 30%;
+    padding-top: 150px;
 }
 
 
@@ -859,9 +860,9 @@ header nav a:hover{
 
 
 .last-image{
-    width: 33%;
+    width: 30%;
     padding-bottom: 150px;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-left: 50px;
     display: flex;
 }
@@ -881,7 +882,8 @@ header nav a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    height: 140%;
+    height: 100%;
+    transform:scale(1.0);
     opacity: 0;
     transition: .4s ease-in-out;
 }
@@ -894,7 +896,7 @@ header nav a:hover{
 
 /******************* Section Five Mobile **************************/
 
-@media(max-width: 1300px){
+@media(max-width: 1320px){
 
     
 
@@ -1059,7 +1061,7 @@ header nav a:hover{
 
 /***************************** Rolunk Mobile ***************************/
 
-@media(max-width: 1300px){
+@media(max-width: 1320px){
     .s3 {
         padding: 10px 0;
     }
@@ -1327,7 +1329,7 @@ header nav a:hover{
 
 /**************************************** Footer Mobile ***************************/
 
-@media(max-width: 1300px){
+@media(max-width: 1320px){
 
     .footer1 h3 {
         font-size: 20px;

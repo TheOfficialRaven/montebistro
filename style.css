@@ -364,6 +364,7 @@ header nav a:hover{
     display: flex;
     max-width: 1500px;
     margin: auto;
+    padding: 100px 0;
 }
 
 .s2-flex .s2_images{
@@ -788,7 +789,7 @@ header nav a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 250px;
     /* margin-bottom: 150px; */
     height: 100%;

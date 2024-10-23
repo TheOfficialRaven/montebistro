@@ -245,7 +245,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(113vh - 113px);
+    height: calc(120vh - 120px);
     display: flex;
     position: relative;
 }
@@ -357,7 +357,7 @@ header nav a:hover{
 .s2{
     width: 100%;
     background-color: #82b6b9;
-    height: calc(113vh - 113px);
+    height: 100%;
 }
 
 .s2 .s2-flex{
@@ -510,7 +510,7 @@ header nav a:hover{
     grid-column-gap: 10px;
     flex-wrap: wrap;
     scroll-margin-top: 110px;
-    height: calc(120vh - 120px);
+    height: 100%;
 }
 
 
@@ -608,7 +608,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: calc(116vh - 116px);
+    height: 100%;
     padding: 50px 0px;
 }
 
@@ -700,6 +700,7 @@ header nav a:hover{
     border: 2px solid #ffffff;
     cursor: pointer;
     font-size: 25px;
+    margin-bottom: 150px;
     
 }
 
@@ -763,6 +764,7 @@ header nav a:hover{
 
     .menu-link a {
         font-size: 16px;
+        margin-bottom: 0;
     }
 
     .bg-menu .overlay {
@@ -787,8 +789,9 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 250px;
     /* margin-bottom: 150px; */
-    height: calc(120vh - 120px);
+    height: 100%;
     scroll-margin-top: 0;
 }
 
@@ -882,6 +885,7 @@ header nav a:hover{
         margin: 70px 0;
         height: 100%;
         scroll-margin-top: 60px;
+        padding-bottom: 0;
     }
 
     .bg-gallery .gallery-flex{
@@ -970,7 +974,8 @@ header nav a:hover{
 .s3{
     width: 100%;
     background-color: #96c4c7;
-    height: calc(113vh - 113px);
+    height: 100%;
+    padding: 130px;
 }
 
 .s3 .s3-flex{
@@ -1081,6 +1086,11 @@ header nav a:hover{
 }
 
 @media(max-width: 576px){
+
+    .s3 {
+        padding: 60px 20px;
+    }
+
     .s3 .s3-flex{
         flex-wrap: wrap;
         flex-direction: column;
@@ -1095,7 +1105,7 @@ header nav a:hover{
     
     .s3-flex .s3_images img{
         width:  90%;
-        margin-right: 30px;
+        margin: 100px 0 50px 0;
     }
     
     .s3 .s3_text{

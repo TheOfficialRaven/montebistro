@@ -35,6 +35,7 @@ p {
 
 
 
+
 /***************************** Header *************************/
 
 header{
@@ -355,7 +356,7 @@ header nav a:hover{
 /************************************* Section Two ********************************/
 .s2{
     width: 100%;
-    background-color: #82b6b9;
+    background-color: #96c4c7;
     height: 100%;
 }
 
@@ -803,28 +804,46 @@ header nav a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 180px;
+    padding-top: 140px;
     /* margin-bottom: 150px; */
     height: 100%;
     scroll-margin-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bg-gallery2 {
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0) 0%) , linear-gradient(180deg, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 0%), url(coffee_stain_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+    /* margin-bottom: 150px; */
+    height: 100%;
+    margin-top: 20px;
+    scroll-margin-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .bg-gallery .gallery-flex{
     display: flex;
-    padding-top: 100px;
 }
 
 .gallery-flex .image-one{
     width: 30%;
-    padding-bottom: 150px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
+    margin-top: 40px;
 }
 
 .gallery-flex .image-one img {
+}
+
+.image-two {
     border: 3px solid #000000;
+    overflow: hidden;
 }
 
 .gallery-flex img{
@@ -835,15 +854,19 @@ header nav a:hover{
 
 }
 
+.bg-gallery2 .gallery-flex {
+    display: flex;
+}
+
+
 .inside-gallery{
     display: flex;
     width: 30%;
-    padding-top: 150px;
+    margin-bottom: 40px;
 }
 
 
 .inside-gallery img{
-    border: 3px solid #000000;
 }
 
 .inside-gallery .left{
@@ -861,14 +884,14 @@ header nav a:hover{
 
 .last-image{
     width: 30%;
-    padding-bottom: 150px;
     margin-right: 50px;
     margin-left: 50px;
     display: flex;
+    margin-top: 40px;
 }
 
 .last-image img {
-    border: 3px solid #000000;
+
 }
 
 .bg-gallery .event{
@@ -892,14 +915,34 @@ header nav a:hover{
     opacity: 1;
 }
 
+.bg-gallery2 .event{
+    position: relative;
+}
+
+
+.bg-gallery2 .overlay-two{
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform:scale(1.0);
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.bg-gallery2 .event:hover .overlay-two{
+    opacity: 1;
+}
+
 
 
 /******************* Section Five Mobile **************************/
 
 @media(max-width: 1320px){
-    .bg-gallery {
-        padding-top: 80px;
-        padding-bottom: 150px;
+    .bg-gallery2 {
+        margin-top: 50px;
     }
     
 
@@ -912,9 +955,29 @@ header nav a:hover{
         height: 100%;
         scroll-margin-top: 60px;
         padding-bottom: 0;
+        padding-top: 80px;
+        padding-left: 0;
+    padding-right: 0;
+    }
+
+    .bg-gallery2 {
+        padding-top: 0;
+        padding-left: 0;
+    padding-right: 0;
     }
 
     .bg-gallery .gallery-flex{
+        display: block;
+    }
+
+    .bg-gallery2 {
+        margin: auto;
+        height: 100%;
+        scroll-margin-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .bg-gallery2 .gallery-flex{
         display: block;
     }
 
@@ -926,6 +989,17 @@ header nav a:hover{
     }
 
     .bg-gallery .overlay-two{
+        position: absolute;
+        background: rgba(0,0,0,.4);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .4s ease-in-out;
+    }
+
+    .bg-gallery2 .overlay-two{
         position: absolute;
         background: rgba(0,0,0,.4);
         top: 0;
@@ -952,14 +1026,14 @@ header nav a:hover{
 
     .last-image{
         width: 80%;
-        padding-bottom: 80px;
+        padding-bottom: 0;
         margin: auto;
         display: flex;
         margin-top: 20px;
     }
 
-    .bg-gallery {
-        padding-top: 0;
+    .bg-gallery .last-image {
+        margin-bottom: 20px;
     }
 
     .gallery-flex .image-one{
@@ -971,7 +1045,7 @@ header nav a:hover{
 
     .last-image{
         width: 90%;
-        padding-bottom: 80px;
+        padding-bottom: 0;
         margin: auto;
         display: flex;
         margin-top: 20px;
@@ -1259,7 +1333,7 @@ header nav a:hover{
 
 .footer1 h3{
     text-transform: capitalize;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 20px;
 }
 

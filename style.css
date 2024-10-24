@@ -953,17 +953,16 @@ header nav a:hover{
     .bg-gallery {
         margin: auto;
         height: 100%;
-        scroll-margin-top: 60px;
         padding-bottom: 0;
         padding-top: 80px;
         padding-left: 0;
-    padding-right: 0;
+        padding-right: 0;
     }
 
     .bg-gallery2 {
         padding-top: 0;
         padding-left: 0;
-    padding-right: 0;
+        padding-right: 0;
     }
 
     .bg-gallery .gallery-flex{

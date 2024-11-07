@@ -1112,6 +1112,10 @@ header nav a:hover{
 
 }
 
+.s3-flex .s3_text h1 {
+    margin-bottom: 20px;
+}
+
 .s3-flex .s3_images img{
     width: 80%;
     margin: 100px 0 100px 0;
@@ -1313,7 +1317,7 @@ header nav a:hover{
 
 .footer1 .footer-links a{
     text-decoration: none;
-    color: rgb(90, 53, 28);;
+    color: rgb(90, 53, 28);
     margin: 0 8px;
     font-size: 18px;
     display: inline-grid;

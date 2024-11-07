@@ -31,6 +31,19 @@ body {
 
 p {
     margin-bottom: 3px;
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+h1{
+    font-family: 'DIN Alternate', sans-serif;   
+}
+
+h4{
+    font-family: 'DIN Alternate', sans-serif;
+}
+
+a {
+    font-family: 'DIN Alternate', sans-serif;
 }
 
 
@@ -498,7 +511,7 @@ header nav a:hover{
     }
 
     .s2 p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -1214,7 +1227,7 @@ header nav a:hover{
     }
 
     .s3 p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 /***************************** Section Six Mobile **********************/
@@ -1360,7 +1373,7 @@ header nav a:hover{
     color: rgb(90, 53, 28);;
     margin-bottom: 5px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .location section{
@@ -1368,7 +1381,7 @@ header nav a:hover{
 }
 
 .footer1 p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .footer1 .Days{
@@ -1404,7 +1417,7 @@ header nav a:hover{
 
 .footer .rights p{
     color: rgb(90, 53, 28);
-    font-size: 13px;
+    font-size: 16px;
 }
 
 
@@ -1421,7 +1434,7 @@ header nav a:hover{
     }
 
     .footer1 a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer2 .footer-links a{

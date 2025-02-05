@@ -1,721 +1,593 @@
 <!DOCTYPE html>
-
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="EI=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="EI=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" type="x-icon" href="Logo_Cafe_Monte.png">
-    <title>Monte Bistro</title>
+  <!-- Alap SEO meta adatok -->
+  <title>Monte Bistro | Budapest Bisztró és Kávézó – Friss, laktózmentes és gluténmentes ételek</title>
+  <meta name="description" content="A Monte Bistro egy budapesti bisztró és kávézó, ahol friss, laktóz- és gluténmentes ételekkel, specialty kávéval és barátságos kiszolgálással várjuk vendégeinket.">
+  <meta name="keywords" content="Monte Bistro, Budapest bisztró, kávézó Budapest, friss ételek, laktózmentes, gluténmentes, specialty kávé, Szépvölgyi Business Park">
 
-    <!-------------------------- linkek font-awsome és bootstrap ------------------------>
+  <!-- Open Graph adatok (Facebook, LinkedIn, stb.) -->
+  <meta property="og:title" content="Monte Bistro | Budapest Bisztró és Kávézó" />
+  <meta property="og:description" content="Frissen készült ételek és specialty kávé Budapesten, a Szépvölgyi Business Parkban." />
+  <meta property="og:image" content="https://monte-bistro.netlify.app/static/sample-cover.jpg" />
+  <meta property="og:url" content="https://monte-bistro.netlify.app" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Monte Bistro | Budapest Bisztró és Kávézó">
+  <meta name="twitter:description" content="Friss, laktóz- és gluténmentes ételek, specialty kávé Budapesten.">
+  <meta name="twitter:image" content="https://monte-bistro.netlify.app/static/sample-cover.jpg">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="Logo_Cafe_Monte.png">
+
+  <!-- Bootstrap, FontAwesome és saját stílusok -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
         integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/63c4dcd0e6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/63c4dcd0e6.js" crossorigin="anonymous"></script>
-
-
-    <link rel="stylesheet" href="style.css">
-
-
+  <!-- Strukturált adatok (LocalBusiness / CafeOrCoffeeShop) JSON-LD formátumban -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Monte Bistro",
+    "image": "https://monte-bistro.netlify.app/static/sample-cover.jpg",
+    "@id": "",
+    "url": "https://monte-bistro.netlify.app",
+    "telephone": "+36-30-470-2375",
+    "priceRange": "$$",
+    "servesCuisine": "Hungarian, Cafe, Bistro",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Montevideó utca 9",
+      "addressLocality": "Budapest",
+      "postalCode": "1037",
+      "addressCountry": "HU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.5301039",
+      "longitude": "19.0341799"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "07:59",
+        "closes": "16:15"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Friday"
+        ],
+        "opens": "07:59",
+        "closes": "15:15"
+      }
+    ],
+    "menu": "https://monte-bistro.netlify.app/monte_bistro_menu.pdf",
+    "description": "Friss, laktózmentes és gluténmentes ételek Budapesten, specialty kávé és barátságos kiszolgálás a Szépvölgyi Business Parkban."
+  }
+  </script>
 </head>
 
 <body>
 
+  <!------------------------------------ Header kezdete ---------------------------------->
+  <header>
+    <div class="logo1">
+      <h1>MONTE</h1>
+    </div>
+    <div id="toggle"></div>
+    <nav class="navigation" id="sidebar">
+      <li><a href="#">home</a></li>
+      <li><a href="#section2">kínálat</a></li>
+      <li><a href="#bg-menu">kávéink</a></li>
+      <li><a href="#galéria">galéria</a></li>
+      <li><a href="#section3">rólunk</a></li>
+      <li><a href="#footer">kapcsolat</a></li>
+    </nav>
+    <div class="bars">
+      <img src="Bars.png" alt="Menü ikon a Monte Bistro Budapest oldalán" class="bar">
+    </div>
+  </header>
+  <!------------------------------------ Header vége ------------------------------------->
 
-    <!------------------------------------ Header kezdete ---------------------------------->
+  <!-------------------------------- Home Kezdete ---------------------------------------->
+  <div class="home-section">
+    <div class="break">
+      <hr>
+    </div>
+    <h1 class="logo2">BISTRO</h1>
+    <div class="home-content initial-position">
+      <!-- Ide kerülhet további bevezető tartalom -->
+    </div>
+  </div>
+  <!-------------------------------- Home Vége ------------------------------------------->
 
-    <header>
-        <div class="logo1">
-            <h1>MONTE</h1>
+  <!-------------------------------- Section Two Kezdete --------------------------------->
+  <div class="s2" id="section2">
+    <div class="s2-flex">
+      <div class="s2_images">
+        <div>
+          <img src="P1570591.jpg" alt="Friss laktózmentes és gluténmentes étel tálalása a Monte Bistro Budapest konyhájából">
+          <img src="P1570677.jpg" alt="Helyben készült finomságok a Monte Bistro budapesti bisztróban">
         </div>
-        <div id="toggle"></div>
-        <nav class="navigation" id="sidebar">
-            <li><a href="#">home</a></li>
-            <li><a href="#section2">kínálat</a></li>
-            <li><a href="#bg-menu">kávéink</a></li>
-            <li><a href="#galéria">galéria</a></li>
-            <li><a href="#section3">rólunk</a></li>
-            <li><a href="#footer">kapcsolat</a></li>
+      </div>
+      <div class="s2_text">
+        <p>
+          Üdvözlünk bisztrónkban, a Monte Bistro-ban Budapesten, ahol minden nap frissen, helyben készítjük ételeinket, 
+          hogy vendégeink mindig a legjobb minőséget élvezhessék. Kínálatunkban <strong>laktózmentes</strong>, 
+          <strong>gluténmentes</strong> és <strong>cukormentes</strong> finomságok is megtalálhatóak, így mindenki találhat kedvére valót.
+          Naponta megújuló <strong>melegétel kínálatunkkal</strong> folyamatosan friss és izgalmas ízekkel várjuk vendégeinket.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------- Section Two Vége ------------------------------------->
 
-        </nav>
-        <div class="bars">
-            <img src="Bars.png" alt="" class="bar">
-        </div>
-        
-    </header>
-
-    
-
-
-
-    <!------------------------------- Header vége --------------------------------------->
-
-    <!-------------------------------- Home Kezdete -------------------------------------->
-
-    <div class="home-section">
-        <div class="break">
-            <hr>
-        </div>
-        <h1 class="logo2">BISTRO</h1>
-        <div class="home-content initial-position">
-            
-            </div>
-        </div>
-
+  <div class="bg-service" id="Menu">
+    <div class="service-one">
+      <img src="P5GH4617.jpg" alt="Friss péksütemények a Monte Bistro budapesti kávézójában">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-one" id="row-two">
+      <img src="P5GH4613.jpg" alt="Kávé- és sütemény kínálat a Monte Bistro Budapest szívében">
+      <div class="overlay"></div>
+    </div>
+    <div class="service-one">
+      <img src="P5GH4836.jpg" alt="Kézzel készített budapesti bisztró fogás a Monte Bistro étlapjáról">
+      <div class="overlay"></div>
     </div>
 
-    <!----------------------------------- Home Vége --------------------------------------------->
-
-    <!------------------------------- Section Two Kezdete --------------------------------------->
-
-    <div class="s2" id="section2">
-        <div class="s2-flex">
-            <div class="s2_images">
-                <div>
-                    <img src="P1570591.jpg">
-                    <img src="P1570677.jpg" alt="">
-                </div>
-            </div>
-            <div class="s2_text">
-                <p>Üdvözlünk bisztrónkban, ahol minden nap frissen, helyben készítjük ételeinket, 
-                    hogy vendégeink mindig a legjobb minőséget élvezhessék. Kínálatunkban laktózmentes,
-                    gluténmentes és cukormentes finomságok is megtalálhatóak, így mindenki találhat kedvére valót.
-                    Naponta megújuló melegétel kínálatunkkal folyamatosan friss és izgalmas ízekkel várjuk vendégeinket.
-                </p>
-
-            </div>
-        </div>
+    <div class="service-one" id="row-two">
+      <img src="P5GH4591.jpg" alt="Frissen pörkölt kávé és cukormentes desszertek a Monte Bistro-ban">
+      <div class="overlay"></div>
     </div>
 
-        <!-------------------------------- Section Two Vége ------------------------------------>
-
-    <div class="bg-service" id="Menu">
-        <div class="service-one">
-            <img src="P5GH4617.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>italok</p>
-                
-                        <h4>
-                            kávék és üdítők
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-        <div class="service-one" id="row-two">
-            <img src="P5GH4613.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-        <div class="service-one">
-            <img src="P5GH4836.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>ételek</p>
-                        <h4 id="coffee-menu">
-                            helyben készült ételek
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one" id="row-two">
-            <img src="P5GH4591.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4808.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4634.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one" id="row-two">
-            <img src="P5GH4760.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4678.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one" id="row-two">
-            <img src="P5GH4882.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4742.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4848.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one" id="row-two">
-            <img src="P5GH4880-Edit.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4730.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one" id="row-two">
-            <img src="P5GH4720.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
-        <div class="service-one">
-            <img src="P5GH4801.jpg" alt="">
-            <div class="overlay">
-                <!--
-                    <div class="over-txt">
-                        <p>nasik</p>
-                        <h4>
-                            péksütik
-                        </h4>
-                    </div>
--->
-            </div>
-        </div>
-
+    <div class="service-one">
+      <img src="P5GH4808.jpg" alt="Egészséges, helyben készült menü a Monte Bistro budapesti kínálatában">
+      <div class="overlay"></div>
     </div>
 
-
-
-    <!------------------------------- Menü Section Four Kezdete -------------------------------->
-    <div class="bg-menu" id="bg-menu">
-        <div class="overlay">
-            <!--
-                <div class="over-txt">
-                    <p>nasik</p>
-                    <h4>
-                        péksütik
-                    </h4>
-                </div>
--->
-        
-        <div class="menu-flex">
-            <div class="menu1">
-                <div>
-                    <h4>Espresso <br>(arabica 100%)</h4>
-                </div>
-                <div>
-                    <h4>950.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Latte Macchiato</h4>
-                </div>
-                <div>
-                    <h4>950.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Jegeskávé <br>Fagyival</h4>
-                </div>
-                <div>
-                    <h4>1290.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Espresso</h4>
-                </div>
-                <div>
-                    <h4>680.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Melange</h4>
-                </div>
-                <div>
-                    <h4>1150.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Jegeskávé</h4>
-                </div>
-                <div>
-                    <h4>1019.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Risretto</h4>
-                </div>
-                <div>
-                    <h4>680.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Flat White</h4>
-                </div>
-                <div>
-                    <h4>1250.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Espresso Tonic</h4>
-                </div>
-                <div>
-                    <h4>1290.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Cortado</h4>
-                </div>
-                <div>
-                    <h4>750.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Affogato</h4>
-                </div>
-                <div>
-                    <h4>1490.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Forró csokoládé</h4>
-                </div>
-                <div>
-                    <h4>1290.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Doppio</h4>
-                </div>
-                <div>
-                    <h4>1180.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Latte</h4>
-                </div>
-                <div>
-                    <h4>950.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Forró Csokoládé <br>(Növényi Tejjel)</h4>
-                </div>
-                <div>
-                    <h4>1290.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Americano</h4>
-                </div>
-                <div>
-                    <h4>750.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Cappuccino</h4>
-                </div>
-                <div>
-                    <h4>880.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Szálas tea</h4>
-                </div>
-                <div>
-                    <h4>950.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Cold Brew</h4>
-                </div>
-                <div>
-                    <h4>1190.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Macha Latte</h4>
-                </div>
-                <div>
-                    <h4>1350.-</h4>
-                </div>
-            </div>   
-
-            <div class="menu1">
-                <div>
-                    <h4>DÉR Juice</h4>
-                </div>
-                <div>
-                    <h4>1190.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Caffé Lungo</h4>
-                </div>
-                <div>
-                    <h4>750.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Tea Kombucha</h4>
-                </div>
-                <div>
-                    <h4>1190.-</h4>
-                </div>
-            </div>
-
-            <div class="menu1">
-                <div>
-                    <h4>Limonádé</h4>
-                </div>
-                <div>
-                    <h4>1200.-</h4>
-                </div>
-            </div>
-
-            </div>
-            <div class="menu-link" id="menu-btn">
-                <a href="monte_bistro_menu.pdf">Válassz a menüről </a>
-            </div>
-        </div>
+    <div class="service-one">
+      <img src="P5GH4634.jpg" alt="Finom ételek barátságos kiszolgálással a Monte Bistro Budapestben">
+      <div class="overlay"></div>
     </div>
 
-
-
-    <!------------------------------- Section Four Vége ----------------------------------------->
-
-    <!------------------------------ Galéria Section Five Kezdete ------------------------------->
-
-    <div class="bg-gallery" id="galéria">
-        <div class="gallery-flex">
-            <div class="image-one">
-                <div class="image-two event">
-                    <img src="P1570623.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-            </div>
-            <div class="inside-gallery">
-                <div class="image-two event">
-                    <img src="P5GH0194.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-                
-            </div>
-            <div class="last-image">
-                <div class="image-two event">
-                    <img src="P1570598-Enhanced-NR.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-            </div>
-
-        </div>
-        
+    <div class="service-one" id="row-two">
+      <img src="P5GH4760.jpg" alt="Színes és friss bisztró ételek Budapesten, Monte Bistro">
+      <div class="overlay"></div>
     </div>
 
-    <div class="bg-gallery2" id="galéria">
-        <div class="gallery-flex">
-            <div class="image-one">
-                <div class="image-two event">
-                    <img src="P1570616.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-            </div>
-            <div class="inside-gallery">
-                <div class="image-two event">
-                    <img src="P1570603.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-                
-            </div>
-            <div class="last-image">
-                <div class="image-two event">
-                    <img src="P1570602.jpg">
-                    <div class="overlay-two"></div>
-                </div>
-            </div>
-
-        </div>
-        
+    <div class="service-one">
+      <img src="P5GH4678.jpg" alt="Hideg italok és egészséges snackek a budapesti Monte Bistro kínálatában">
+      <div class="overlay"></div>
     </div>
 
-
-    <!------------------------------------- Section Five Vége --------------------------------->
-
-    <!---------------------------------- Rólunk Section Six Kezdete --------------------------->
-    <div class="s3" id="section3">
-        <div class="s3-flex">
-            <div class="s3_text">
-                <h1>Rólunk</h1>
-                <p>Üdvözlünk a Monte Bistro-ban, ahol a finom ízek és minőségi kávé találkozik barátságos kiszolgálással. 
-                    Kézzel készített ételeink és frissen pörkölt kávénk új lendületet adnak napodnak.</p>
-
-                   <p> Bisztrónk tágas terasszal rendelkezik, ahol élvezheted a nyugodt környezetet a Szépvölgyi Business Park közepén, legyen szó rövid szünetről vagy hosszabb kikapcsolódásról. 
-                    Barátságos személyzetünk gondoskodik róla, hogy minden vendég különleges figyelmet kapjon.</p>
-
-                    <p>Látogass meg minket a Monte Bistro-ban, és tapasztald meg a kávé és friss ételek tökéletes harmóniáját az irodapark forgatagában.</p>
-            </div>
-
-            <div class="s3_images">
-                <div>
-                    <img src="P5GH0211-3.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-
-    <!--------------------------------- Section Six Vége --------------------------------------->
-
-    <!----------------------------------- Footer Kezdete --------------------------------------->
-    <div class="footer" id="footer">
-        <div class="footer-flex">
-            <div class="footer1">
-
-                <img src="info.png" alt="">
-                <h3 class="services">Szolgáltatások</h3>
-                <div class="footer-links">
-                            <p>Kerthelyiség</p>
-                            <p>Free Wifi</p>
-                            <p>Állatbarát</p>
-                            <p>Klíma</p>
-                            <p>Elvitel</p>
-                            <p>Akadálymentes</p>
-                            <p>Dohányzás</p>
-            
-
-                </div>
-            </div>
-
-            <div class="footer1">
-
-                <img src="money.png" alt="">
-                <h3>Fizetési Lehetőségek</h3>
-                <div class="footer-links" id="margin-footer-links">
-                            <p>Bankkártya</p>
-                            <p>Paypal</p>
-                            <p>OTP SZÉP kártya</p>
-                            <p>Kézpénz</p>
-
-                </div>
-            </div>
-
-            <div class="footer1">
-
-                <img src="opening-hours.png" alt="">
-                <h3>nyitvatartási idő</h3>
-                <div class="txt-inside">
-                    <section class="Days">Hétfőtől - Csütörtökig</section>
-                    <section>7:59 – 16:15</section>
-                    <section class="Days">Péntek</section>
-                    <section>7:59 - 15:15</section>
-                </div>
-            </div>
-
-            <div class="footer1">
-
-                <img src="treasure-map.png" alt="">
-                <h3>kapcsolat</h3>
-                <div class="location">
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                    <a href="https://www.google.com/maps/place/Café+Monte/@47.5301039,19.0341799,15z/data=!4m2!3m1!1s0x0:0x92d629418487ccfc?sa=X&ved=2ahUKEwivjPXZzL6AAxUlhv0HHT9fArAQ_BJ6BAhOEAA&ved=2ahUKEwivjPXZzL6AAxUlhv0HHT9fArAQ_BJ6BAhhEAg"
-                        class="map">Megtalálható</a>
-                    <section>Budapest, Montevideó utca 9, 1037</section>
-                </div>
-                <div class="location">
-                    <span><i class="fas fa-phone"></i></span>
-                    <a>Telefonszámunk</a>
-                    <section>(30) 470 2375</section>
-                </div>
-                <div class="location">
-                    <span><i class="fas fa-envelope"></i></span>
-                    <a>tgsolutionskft@gmail.com</a>
-                </div>
-            </div>
-            
-        </div>
-        <hr>
-        <div class="rights">
-            <p>Designed By Klaudia Székelyföldi</p>
-            <p>Copyright © 2024 by Mark Gor | Minden Jog Fenntartva.</p>
-
-        </div>
+    <div class="service-one" id="row-two">
+      <img src="P5GH4882.jpg" alt="Napi menü és friss ételek a Monte Bistro Budapest szívében">
+      <div class="overlay"></div>
     </div>
 
-    <!------------------------------------- Footer Vége ------------------------------------->
+    <div class="service-one">
+      <img src="P5GH4742.jpg" alt="Gluténmentes péksütik a Monte Bistro kávézójában, Budapest">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="service-one">
+      <img src="P5GH4848.jpg" alt="Édes és sós finomságok egyaránt elérhetők a budapesti Monte Bistroban">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="service-one" id="row-two">
+      <img src="P5GH4880-Edit.jpg" alt="Budapesti kávézó, a Monte Bistro, barátságos és nyugodt hangulat">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="service-one">
+      <img src="P5GH4730.jpg" alt="Speciális étrendhez igazodó ételek a Monte Bistro Budapest kínálatában">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="service-one" id="row-two">
+      <img src="P5GH4720.jpg" alt="Monte Bistro Budapest – friss alapanyagok és minőségi kávé">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="service-one">
+      <img src="P5GH4801.jpg" alt="Kávé és könnyed harapnivalók a budapesti Monte Bistro-ban">
+      <div class="overlay"></div>
+    </div>
+  </div>
 
 
-    <!----------------------------------- Javascript ---------------------------------------->
+  <!------------------------------- Menü Section Four Kezdete ------------------------------>
+  <div class="bg-menu" id="bg-menu">
+    <div class="overlay">
+      <div class="menu-flex">
+        <!-- Az árak és italok listája -->
+        <div class="menu1">
+          <div>
+            <h4>Espresso <br>(arabica 100%)</h4>
+          </div>
+          <div>
+            <h4>950.-</h4>
+          </div>
+        </div>
 
+        <div class="menu1">
+          <div>
+            <h4>Latte Macchiato</h4>
+          </div>
+          <div>
+            <h4>950.-</h4>
+          </div>
+        </div>
 
-    <script src="main.js"></script>
+        <div class="menu1">
+          <div>
+            <h4>Jegeskávé <br>Fagyival</h4>
+          </div>
+          <div>
+            <h4>1290.-</h4>
+          </div>
+        </div>
 
+        <div class="menu1">
+          <div>
+            <h4>Espresso</h4>
+          </div>
+          <div>
+            <h4>680.-</h4>
+          </div>
+        </div>
 
+        <div class="menu1">
+          <div>
+            <h4>Melange</h4>
+          </div>
+          <div>
+            <h4>1150.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Jegeskávé</h4>
+          </div>
+          <div>
+            <h4>1019.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Risretto</h4>
+          </div>
+          <div>
+            <h4>680.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Flat White</h4>
+          </div>
+          <div>
+            <h4>1250.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Espresso Tonic</h4>
+          </div>
+          <div>
+            <h4>1290.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Cortado</h4>
+          </div>
+          <div>
+            <h4>750.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Affogato</h4>
+          </div>
+          <div>
+            <h4>1490.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Forró csokoládé</h4>
+          </div>
+          <div>
+            <h4>1290.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Doppio</h4>
+          </div>
+          <div>
+            <h4>1180.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Latte</h4>
+          </div>
+          <div>
+            <h4>950.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Forró Csokoládé <br>(Növényi Tejjel)</h4>
+          </div>
+          <div>
+            <h4>1290.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Americano</h4>
+          </div>
+          <div>
+            <h4>750.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Cappuccino</h4>
+          </div>
+          <div>
+            <h4>880.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Szálas tea</h4>
+          </div>
+          <div>
+            <h4>950.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Cold Brew</h4>
+          </div>
+          <div>
+            <h4>1190.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Macha Latte</h4>
+          </div>
+          <div>
+            <h4>1350.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>DÉR Juice</h4>
+          </div>
+          <div>
+            <h4>1190.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Caffé Lungo</h4>
+          </div>
+          <div>
+            <h4>750.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Tea Kombucha</h4>
+          </div>
+          <div>
+            <h4>1190.-</h4>
+          </div>
+        </div>
+
+        <div class="menu1">
+          <div>
+            <h4>Limonádé</h4>
+          </div>
+          <div>
+            <h4>1200.-</h4>
+          </div>
+        </div>
+      </div>
+      <div class="menu-link" id="menu-btn">
+        <a href="monte_bistro_menu.pdf">Válassz a menüről </a>
+      </div>
+    </div>
+  </div>
+  <!------------------------------- Section Four Vége --------------------------------------->
+
+  <!------------------------------ Galéria Section Five Kezdete ---------------------------->
+  <div class="bg-gallery" id="galéria">
+    <div class="gallery-flex">
+      <div class="image-one">
+        <div class="image-two event">
+          <img src="P1570623.jpg" alt="Monte Bistro Budapest – kávézói enteriőr és friss étel kínálat">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+      <div class="inside-gallery">
+        <div class="image-two event">
+          <img src="P5GH0194.jpg" alt="Budapesti bisztró barátságos hangulata a Monte Bistroban">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+      <div class="last-image">
+        <div class="image-two event">
+          <img src="P1570598-Enhanced-NR.jpg" alt="Különleges kávé és péksütemény a Monte Bistro Budapestben">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gallery2" id="galéria">
+    <div class="gallery-flex">
+      <div class="image-one">
+        <div class="image-two event">
+          <img src="P1570616.jpg" alt="Stílusos belső tér Budapest egyik legjobb bisztrójában, a Monte Bistroban">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+      <div class="inside-gallery">
+        <div class="image-two event">
+          <img src="P1570603.jpg" alt="Ínycsiklandó, frissen készült bisztróételek a Monte Bistro Budapest kínálatában">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+      <div class="last-image">
+        <div class="image-two event">
+          <img src="P1570602.jpg" alt="Könnyed kikapcsolódás egy budapesti kávézó-bisztróban, a Monte Bistroban">
+          <div class="overlay-two"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------- Section Five Vége --------------------------------------->
+
+  <!-------------------------------- Rólunk Section Six Kezdete ----------------------------->
+  <div class="s3" id="section3">
+    <div class="s3-flex">
+      <div class="s3_text">
+        <h1>Rólunk</h1>
+        <p>
+          Üdvözlünk a Monte Bistro-ban, Budapest egyik kedvelt <strong>bisztrójában</strong>, ahol a finom ízek és <strong>minőségi kávé</strong> 
+          találkozik barátságos kiszolgálással. Kézzel készített ételeink, köztük <strong>laktózmentes és gluténmentes</strong> fogások, 
+          valamint frissen pörkölt kávénk új lendületet adnak napodnak.
+        </p>
+        <p>
+          Bisztrónk tágas terasszal rendelkezik, ahol élvezheted a nyugodt környezetet a <strong>Szépvölgyi Business Park</strong> közepén, 
+          legyen szó rövid szünetről vagy hosszabb kikapcsolódásról. Barátságos személyzetünk gondoskodik róla, hogy minden vendég különleges figyelmet kapjon.
+        </p>
+        <p>
+          Látogass meg minket a <strong>Monte Bistro</strong>-ban, és tapasztald meg a kávé és friss ételek tökéletes harmóniáját 
+          az irodapark forgatagában Budapesten.
+        </p>
+      </div>
+      <div class="s3_images">
+        <div>
+          <img src="P5GH0211-3.jpg" alt="Monte Bistro Budapest – barátságos személyzet és kiváló kávé">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------- Section Six Vége --------------------------------------->
+
+  <!----------------------------------- Footer Kezdete --------------------------------------->
+  <div class="footer" id="footer">
+    <div class="footer-flex">
+      <div class="footer1">
+        <img src="info.png" alt="Információ ikon – Monte Bistro Budapest">
+        <h3 class="services">Szolgáltatások</h3>
+        <div class="footer-links">
+          <p>Kerthelyiség</p>
+          <p>Free Wifi</p>
+          <p>Állatbarát</p>
+          <p>Klíma</p>
+          <p>Elvitel</p>
+          <p>Akadálymentes</p>
+          <p>Dohányzás</p>
+        </div>
+      </div>
+
+      <div class="footer1">
+        <img src="money.png" alt="Fizetés ikon – Budapest Monte Bistro">
+        <h3>Fizetési Lehetőségek</h3>
+        <div class="footer-links" id="margin-footer-links">
+          <p>Bankkártya</p>
+          <p>Paypal</p>
+          <p>OTP SZÉP kártya</p>
+          <p>Kézpénz</p>
+        </div>
+      </div>
+
+      <div class="footer1">
+        <img src="opening-hours.png" alt="Nyitvatartás ikon – Monte Bistro Budapest">
+        <h3>nyitvatartási idő</h3>
+        <div class="txt-inside">
+          <section class="Days">Hétfőtől - Csütörtökig</section>
+          <section>7:59 – 16:15</section>
+          <section class="Days">Péntek</section>
+          <section>7:59 - 15:15</section>
+        </div>
+      </div>
+
+      <div class="footer1">
+        <img src="treasure-map.png" alt="Térkép ikon – Monte Bistro elhelyezkedés Budapesten">
+        <h3>kapcsolat</h3>
+        <div class="location">
+          <span><i class="fas fa-map-marker-alt"></i></span>
+          <a href="https://www.google.com/maps/place/Café+Monte/@47.5301039,19.0341799,15z/data=!4m2!3m1!1s0x0:0x92d629418487ccfc?sa=X&ved=2ahUKEwivjPXZzL6AAxUlhv0HHT9fArAQ_BJ6BAhOEAA&ved=2ahUKEwivjPXZzL6AAxUlhv0HHT9fArAQ_BJ6BAhhEAg"
+             class="map">Megtalálható</a>
+          <section>Budapest, Montevideó utca 9, 1037</section>
+        </div>
+        <div class="location">
+          <span><i class="fas fa-phone"></i></span>
+          <a>Telefonszámunk</a>
+          <section>(30) 470 2375</section>
+        </div>
+        <div class="location">
+          <span><i class="fas fa-envelope"></i></span>
+          <a>tgsolutionskft@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="rights">
+      <p>Designed By Klaudia Székelyföldi</p>
+      <p>Copyright © 2024 by Mark Gor | Minden Jog Fenntartva.</p>
+    </div>
+  </div>
+  <!----------------------------------- Footer Vége ----------------------------------------->
+
+  <!----------------------------------- Javascript ------------------------------------------>
+  <script src="main.js"></script>
 </body>
-
 </html>
